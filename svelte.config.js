@@ -8,6 +8,9 @@ const config = {
   preprocess: preprocess(),
 
   kit: {
+    paths: {
+      base: '/2022'
+    },
     adapter: staticAdapter({
       fallback: 'index.html'
     }),

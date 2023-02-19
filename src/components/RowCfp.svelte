@@ -2,6 +2,7 @@
   import Fa from 'svelte-fa/src/fa.svelte'
   import FaLayers from 'svelte-fa/src/fa-layers.svelte'
   import { faPaperPlane } from '@fortawesome/free-solid-svg-icons/faPaperPlane'
+  import { base } from '$app/paths'
   import Window from './Window.svelte'
 </script>
 
@@ -91,7 +92,7 @@
     </div>
 
     <div class="button">
-      <a class="button-cfp" href="/cfp">Apply to the CFP</a>
+      <a class="button-cfp" href={`${base}/cfp`}>Apply to the CFP</a>
     </div>
   </div>
 </Window>

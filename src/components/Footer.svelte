@@ -1,7 +1,7 @@
 <script lang="ts">
   import Fa from 'svelte-fa/src/fa.svelte'
   import FaLayers from 'svelte-fa/src/fa-layers.svelte'
-  import { assets } from '$app/paths'
+  import { base, assets } from '$app/paths'
   import { faCircle } from '@fortawesome/free-solid-svg-icons/faCircle'
   import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
   import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin'
@@ -100,8 +100,8 @@
       <h1>Site Map</h1>
 
       <div>
-        <a href="/">Home</a>
-        <a href="/#about">About</a>
+        <a href={`${base}/`}>Home</a>
+        <a href={`${base}/#about`}>About</a>
         <a
           href="https://gambiconf.dev/2021"
           target="_blank"
@@ -109,7 +109,7 @@
         >
           2021 Edition
         </a>
-        <a href="/code-of-conduct">Code of Conduct</a>
+        <a href={`${base}/code-of-conduct`}>Code of Conduct</a>
         <a
           href="https://docs.google.com/presentation/d/1u-VWUl92qNr1i_zEcqSdXwLXpwsT6pTl6CIVoA-WrMg/edit?usp=sharing"
           target="_blank"

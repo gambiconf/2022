@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { assets } from '$app/paths'
+  import { base, assets } from '$app/paths'
 </script>
 
 <style>
@@ -49,7 +49,7 @@
 </style>
 
 <header>
-  <a href="/">
+  <a href={`${base}/`}>
     <img
       src={`${assets}/logo.png`}
       alt="logo"
@@ -57,9 +57,9 @@
   </a>
 
   <nav>
-    <a href="/">Home</a>
-    <a href="/#about">About</a>
-    <a href="/#schedule">Schedule</a>
-    <a href="/album">Album</a>
+    <a href={`${base}/`}>Home</a>
+    <a href={`${base}/#about`}>About</a>
+    <a href={`${base}/#schedule`}>Schedule</a>
+    <a href={`${base}/album`}>Album</a>
   </nav>
 </header>

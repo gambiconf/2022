@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths'
   import Window from './Window.svelte'
 </script>
   
@@ -67,7 +68,7 @@
         </div>
       </div>
 
-      <a href="/album">📸 Go to the event album</a>
+      <a href={`${base}/album`}>📸 Go to the event album</a>
     </article>
   </Window>
 </div>
