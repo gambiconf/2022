@@ -1,3 +1,5 @@
+> :warning: This repository is an archive for the GambiConf 2022 edition, kept only for historical purpose
+
 # <img src="/static/favicon.png" align="right" height="75px" />  GambiConf
 
 > 🐒 The Blow Your Mind Conference
