@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && touch ./build/.nojekyll && echo \"gambiconf.dev\" > ./build/CNAME",
+    "build": "vite build && touch ./build/.nojekyll && echo \"gambiconf.dev\" > ./build/CNAME && cp build/index.html build/404.html",
     "deploy": "gh-pages -d build -t true",
     "preview": "vite preview",
     "test": "playwright test",
