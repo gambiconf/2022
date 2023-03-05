@@ -146,7 +146,7 @@
       <Button
         url="https://www.youtube.com/channel/UCnTbfjNNWxFMyqW-d2QgHYw"
       >
-        YouuTube channel
+        YouTube channel
       </Button>
     </div>
   </div>
