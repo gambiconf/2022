@@ -28,7 +28,14 @@
     }
   }
 
-  onMount(draw);
+  onMount(() => {
+    draw();
+
+    const observer = new MutationObserver(draw);
+    observer.observe(slotHolder, { childList: true });
+
+    return () => observer.disconnect();
+  });
 </script>
 
 <style>
@@ -71,8 +78,6 @@
 <div
   class="slot-holder"
   bind:this={slotHolder}
-  on:DOMNodeInserted={draw}
-  on:DOMNodeRemoved={draw}
 >
   <slot />
 </div>
